@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Enter your height(cm):"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="200dp" />
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvHeight"
+        android:layout_marginTop="200dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Enter your weight(kg):"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvHeight"
+        />
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etHeight"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/tvWeight"
+        />
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:text="CALCULATE BMI"
+        android:layout_below="@+id/etWeight"
+        />
+
+
+</RelativeLayout>
